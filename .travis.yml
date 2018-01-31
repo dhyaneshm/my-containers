@@ -11,3 +11,4 @@ script:
 
 after_success:
   - docker push $DOCKER_REPO/${DOCKER_IMAGE}:${TRAVIS_BUILD_NUMBER}
+  - docker push $DOCKER_REPO/${DOCKER_IMAGE}:latest
